@@ -1,0 +1,427 @@
+/* General App styling */
+.App {
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+  background-image: url('/home/matoke/Ecoledger/src/1.jpg'); /* Apply the background to the whole app */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+/* Navigation bar styling */
+.navbar {
+  background-color: transparent; /* Make navbar transparent */
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+.navbar .logo h2 {
+  color: #61dafb;
+  margin: 0;
+  
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.nav-links a:hover {
+  color: #61dafb;
+}
+
+/* Section styling */
+.section {
+  padding: 80px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white; /* Set a default text color for readability */
+}
+
+.home-section {
+  background-color: rgba(0, 0, 0, 0.6); /* Add the same semi-transparent background as other sections */
+}
+
+.about-section, .contact-section {
+  background-color: rgba(0, 0, 0, 0.6); /* Consistent dark overlay for all sections */
+}
+
+h1, h2, p {
+  color: white; /* Ensure text remains readable */
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Button styling */
+.start-button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #21a1f1;
+}
+
+/* Contact form styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-bottom: 50px;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: 1px solid #ddd;
+  border-radius: 9px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #21a1f1;
+}
+/* Login container styling */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Take full height of the viewport */
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  color: white;
+  position: fixed; /* Make it overlay the entire page */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it's on top */
+}
+
+.login-container h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+.login-container input {
+  margin-bottom: 15px;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-container button {
+  padding: 10px;
+  background-color: #61dafb;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #21a1f1;
+}
+
+.login-container p {
+  margin-top: 15px;
+}
+
+.login-container span {
+  color: #61dafb;
+  cursor: pointer;
+}
+
+.login-container span:hover {
+  color: #21a1f1;
+}
+
+/* Close button styling */
+.close-button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f44336; /* Red color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Reverse the order of image and text for alternating layout */
+.about-item.reverse {
+  flex-direction: row-reverse;
+}
+
+.about-item.reverse img {
+  margin-left: 20px;
+  margin-right: 0;
+}
+
+
+.founders-section {
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.founders-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.founder {
+  text-align: center;
+  width: 200px;
+}
+
+.founder-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.founder h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.founder p {
+  font-size: 1.1rem;
+}
+
+.founders-section {
+  padding: 60px 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.founders-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.founder {
+  text-align: center;
+  width: 200px;
+}
+
+.founder-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+/* Add background images for each founder */
+.founder1 .founder-image {
+  background-image: url('/home/matoke/Ecoledger/src/matoke.jpg');
+}
+
+.founder2 .founder-image {
+  background-image: url('/home/matoke/Ecoledger/src/judas.jpeg');
+}
+
+.founder3 .founder-image {
+  background-image: url('/home/matoke/Ecoledger/src/anini.jpeg');
+}
+
+.founder4 .founder-image {
+  background-image: url('/home/matoke/Ecoledger/src/alice2.jpeg');
+}
+
+.founder5 .founder-image {
+  background-image: url('/home/matoke/Ecoledger/src/tere.jpeg');
+}
+
+.founder h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+}
+
+.founder p {
+  font-size: 1.1rem;
+}
+
+/* Carbon Credit Calculation Form */
+form {
+  
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form div {
+  
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+form label {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+form select, form input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+form button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  background-color: #61dafb;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #21a1f1;
+}
+
+/* Result Styling */
+.result {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  color: #61dafb;
+  font-weight: bold;
+}
+
+.prediction {
+  background-color: transparent
+}
+.prediction-section {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6); /* Light background for contrast */
+  font-family: Arial, sans-serif;
+}
+.about-section {
+  padding: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: Arial, sans-serif;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  height: 200px;
+  color: white;
+  position: relative;
+  padding: 20px;
+}
+
+.about-item.reverse {
+  flex-direction: row-reverse; /* Reverse layout for alternating items */
+}
+
+.about-text {
+  flex: 500;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.about-text h3 {
+  margin: 0 0 50px 0;
+  font-size: 24px;
+}
+
+.about-text p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 2;
+}
+
+.about-image {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+}
+
+
